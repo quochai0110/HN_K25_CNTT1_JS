@@ -1,0 +1,1 @@
+alert("học js cơ bản");
