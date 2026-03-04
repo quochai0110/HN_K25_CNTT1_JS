@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let obj={
+            a:1
+        }
+        let b= {...obj}; // gán địa chỉ obj cho b , obj và b cùng trỏ tới địa chỉ ô nhớ
+        b.a=10;
+        console.log("obj",obj);
+
+        /* 
+            có cách nào gán obj cho b mà khi thay đổi b thì obj KHÔNG THAY ĐỔI
+            CÁC CÁCH CLONE OBJECT TRONG JS
+            1.CLONE NÔNG
+                OPERATOR: spread
+            2.CLONE SÂU
+        
+        */
+        
+        let students =[ "hoa", "hồng"] // quan tâm chỉ số 
+
+        let new_object={
+            a:1,
+            b:2
+        };
+        console.log("key", Object.keys(new_object)); // [a,b]
+        console.log("kết quả",new_object +20 );
+        
+        let preson = new Object();
+        
+    </script>
+  </body>
+</html>
